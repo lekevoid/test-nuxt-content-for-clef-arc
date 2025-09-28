@@ -6,12 +6,8 @@ export default defineNuxtConfig({
 	modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/image", "@nuxt/ui", "@nuxthub/core"],
 
 	content: {
-		build: {
-			markdown: {
-				toc: {
-					depth: 3, // include h3 headings
-				},
-			},
+		preview: {
+			api: "https://api.nuxt.studio",
 		},
 	},
 

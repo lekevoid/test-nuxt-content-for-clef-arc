@@ -1,12 +1,12 @@
-import { defineCollection, defineContentConfig } from "@nuxt/content";
+import { defineCollection, defineContentConfig, z } from "@nuxt/content";
 
 export default defineContentConfig({
 	collections: {
-		docs: defineCollection({
+		content: defineCollection({
 			// Specify the type of content in this collection
 			type: "page",
 			// Load every file inside the `content` directory
-			source: "**",
+			source: "**/*.md",
 		}),
 	},
 });
